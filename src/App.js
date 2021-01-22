@@ -1,12 +1,11 @@
 import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Component/Navbar';
 
 function App() {
   return (
-    <div>
-      <h1>
-        this is amazon Clone
-      </h1>
-    </div>
+    <NavBar />
   )
 }
 
