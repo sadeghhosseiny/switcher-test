@@ -1,0 +1,22 @@
+.logo {
+    width: 105px;
+    object-fit: contain;
+    margin-top: 8px;
+}
+
+.navbar {
+    background-color: #131921;
+}
+
+.search_input {
+    height: 45px;
+    border: none;
+}
+
+/* .button__header {
+    margin-left: 220px;
+    margin-top: 20px;
+    font-size: 27px;
+    border: none;
+
+} */
