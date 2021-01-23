@@ -6,12 +6,12 @@ function Navbar() {
     return (
 
 
-        <nav className={`navbar navbar-dark bg-dark ${styles.navbar}`}>
+        <nav className={`navbar navbar-dark ${styles.navbar}`}>
             <img src={logo} className={`${styles.logo} navbar-brand mr-5`} />
             <div className="d-flex flex-grow-1">
                 <form className="mx-auto w-75 d-inline-block order-1">
                     <div className="input-group">
-                        <input type="text" className="form-control py-4" />
+                        <input type="text" className="form-control py-3" />
                         <div class="input-group-append">
                             <button className="btn btn-warning" type="submit">
                                 <i className="fas fa-search" />
