@@ -6,10 +6,10 @@ function Navbar() {
     return (
 
 
-        <nav className={`navbar navbar-expand-md navbar-dark bg-dark ${styles.navbar}`}>
+        <nav className={`navbar navbar-dark bg-dark ${styles.navbar}`}>
             <img src={logo} className={`${styles.logo} navbar-brand mr-5`} />
             <div className="d-flex flex-grow-1">
-                <form className="mx-2 my-auto w-100 d-inline-block order-1">
+                <form className="mx-auto w-75 d-inline-block order-1">
                     <div className="input-group">
                         <input type="text" className="form-control py-4" />
                         <div class="input-group-append">
@@ -20,7 +20,7 @@ function Navbar() {
                     </div>
                 </form>
             </div>
-            <ul className="navbar-nav">
+            {/* <ul className="navbar-nav">
                 <li className="nav-item mx-3 mt-4 text-light">
                     <span>
                         <i className="fas fa-flag" />
@@ -32,7 +32,7 @@ function Navbar() {
                     </small>
                     <p className="text-capitalize">account & list</p>
                 </li>
-            </ul>
+            </ul> */}
 
         </nav>
     )
