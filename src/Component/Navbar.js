@@ -7,41 +7,56 @@ function Navbar() {
 
 
         <nav className={`navbar navbar-dark ${styles.navbar}`}>
-            <img src={logo} className={`${styles.logo} navbar-brand mr-5`} />
-            <div className={`d-flex flex-grow-1 justify-content-center ${styles.searchForm}`}>
-                <form className="w-75">
-                    <div className="input-group">
-                        <input type="text" className="form-control py-3" />
-                        <div class="input-group-append mr-0">
-                            <button className="btn btn-warning" type="submit">
-                                <i className="fas fa-search" />
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div className="d-flex mr-5">
-                <div className="col-lg-1 pt-3 mr-5">
+            <img src={logo} className={`${styles.logo} navbar-brand mr-sm-0 mr-lg-5`} />
 
-                    <span className="mr-5">
+            <form className={`navbar-form navbar-search-form ${styles.searchForm}`}>
+
+                <div className="input-group ">
+                    <input type="text" className="form-control py-3" />
+                    <div class="input-group-append">
+                        <button className="btn btn-warning" type="submit">
+                            <i className="fas fa-search" />
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <div className="d-flex mx-auto">
+                <div className="col-md-2 pt-2">
+
+                    <span>
                         <i className="fas fa-flag text-white" />
                     </span>
 
                 </div >
-                <div className="col-lg-5 mx-auto">
+                <div className="col-md-6 mx-sm-0">
 
                     <div className="m-auto text-white">
                         Hello, Sign In
-                </div>
-                    <span className="text-capitalize text-white font-weight-bold">account & list</span>
+                    </div>
+                    <span className="text-capitalize text-white font-weight-bold">
+                        account & list
+                    </span>
 
                 </div>
-                <div className="col-lg-4 mx-auto">
+                <div className="col-md-4">
 
                     <div className="text-white">
                         Returns
+                    </div>
+                    <span className="text-white font-weight-bold">
+                        & Orders
+                    </span>
                 </div>
-                    <span className="text-white font-weight-bold">& Orders</span>
+                <div className="d-flex pt-2">
+                    <span>
+                        <i className="fas fa-shopping-cart text-white" />
+                    </span>
+                    <span className="text-white text-capitalize font-weight-bold">
+                        cart
+                    </span>
                 </div>
 
             </div>

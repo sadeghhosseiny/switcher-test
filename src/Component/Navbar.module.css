@@ -7,6 +7,20 @@
     background-color: #131921;
 }
 
+.searchForm {
+    position: absolute;
+    text-align: center;
+    margin: 20rem;
+    float: none;
+
+}
+
+/* width: 55vw; */
+/* margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important
+} */
 
 
 /* @media (min-width: 650px) {
