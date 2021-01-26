@@ -23,8 +23,7 @@
     z-index: 100;
 }
 
-.searchForm {
-    display: flex;
+.navbar {
     flex: 1;
     align-items: center;
 }
@@ -33,6 +32,7 @@
     border: none;
     width: 100%;
 }
+
 
 /* width: 55vw; */
 /* margin-right: 0 !important;

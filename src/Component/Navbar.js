@@ -6,28 +6,30 @@ function Navbar() {
     return (
 
         <div className={`${styles.navF}`}>
-            <div className={`navbar navbar-expand-md navbar-dark ${styles.navbar}`}>
+            <nav className={`navbar navbar-dark ${styles.navbar}`}>
 
                 <img src={logo} className={`${styles.logo} navbar-brand mr-sm-0 mr-lg-5`} />
-                <form className={`${styles.searchForm}`}>
+                <div>
 
-                    <div className="input-group">
-                        <input type="text" className={`form-control py-3 ${styles.searchInput}`} />
-                        <div class="input-group-append">
-                            <button className="btn btn-warning" type="submit">
-                                <i className="fas fa-search" />
-                            </button>
+                    <form className={` ${styles.searchForm}`}>
+
+                        <div className="input-group">
+                            <input type="text" className={`form-control py-3 ${styles.searchInput}`} />
+                            <div class="input-group-append">
+                                <button className="btn btn-warning" type="submit">
+                                    <i className="fas fa-search" />
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
 
 
 
 
 
-                <div className="d-flex mx-auto">
-                    <div className="col-md-2 pt-2">
-
+                <div className="d-flex flex-flow-nowrap mx-3">
+                    <div className="pt-2">
                         <span>
                             <i className="fas fa-flag text-white" />
                         </span>
@@ -35,7 +37,7 @@ function Navbar() {
                     </div >
                     <div className="col-md-6 mx-sm-0">
 
-                        <div className="m-auto text-white">
+                        <div className="text-white">
                             Hello, Sign In
                     </div>
                         <span className="text-capitalize text-white font-weight-bold">
@@ -76,7 +78,7 @@ function Navbar() {
                 </li>
             </ul> */}
 
-            </div>
+            </nav>
         </div>
 
     )
