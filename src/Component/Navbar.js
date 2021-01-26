@@ -9,43 +9,43 @@ function Navbar() {
             <nav className={`navbar navbar-dark ${styles.navbar}`}>
 
                 <img src={logo} className={`${styles.logo} navbar-brand mr-sm-0 mr-lg-5`} />
-                <div>
+                {/* <div className={`${styles.searchHeader}`}> */}
 
-                    <form className={` ${styles.searchForm}`}>
+                <form className={` ${styles.searchForm}`}>
 
-                        <div className="input-group">
-                            <input type="text" className={`form-control py-3 ${styles.searchInput}`} />
-                            <div class="input-group-append">
-                                <button className="btn btn-warning" type="submit">
-                                    <i className="fas fa-search" />
-                                </button>
-                            </div>
+                    <div className="input-group">
+                        <input type="text" className={`form-control py-3 ${styles.searchInput}`} />
+                        <div class="input-group-append">
+                            <button className="btn btn-warning" type="submit">
+                                <i className="fas fa-search" />
+                            </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+                {/* </div> */}
 
 
 
 
 
-                <div className="d-flex flex-flow-nowrap mx-3">
-                    <div className="pt-2">
+                <div className="d-flex mx-2">
+                    <div className="mx-3 pt-2">
                         <span>
                             <i className="fas fa-flag text-white" />
                         </span>
 
                     </div >
-                    <div className="col-md-6 mx-sm-0">
+                    <div className="mx-3">
 
                         <div className="text-white">
                             Hello, Sign In
-                    </div>
+                        </div>
                         <span className="text-capitalize text-white font-weight-bold">
                             account & list
-                    </span>
+                        </span>
 
                     </div>
-                    <div className="col-md-4">
+                    <div className="mx-3">
 
                         <div className="text-white">
                             Returns
@@ -54,7 +54,7 @@ function Navbar() {
                             & Orders
                     </span>
                     </div>
-                    <div className="d-flex pt-2">
+                    <div className="d-flex pt-2 mx-1">
                         <span>
                             <i className="fas fa-shopping-cart text-white" />
                         </span>
