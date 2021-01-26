@@ -8,13 +8,13 @@ function Navbar() {
         <div className={`${styles.navF}`}>
             <nav className={`navbar navbar-dark ${styles.navbar}`}>
 
-                <img src={logo} className={`${styles.logo} navbar-brand mr-sm-0 mr-lg-5`} />
+                <img src={logo} className={`${styles.logo} navbar-brand mr-lg-5`} />
                 {/* <div className={`${styles.searchHeader}`}> */}
 
                 <form className={` ${styles.searchForm}`}>
 
                     <div className="input-group">
-                        <input type="text" className={`form-control py-3 ${styles.searchInput}`} />
+                        <input type="text" className={`form-control py-4 ${styles.searchInput}`} />
                         <div class="input-group-append">
                             <button className="btn btn-warning" type="submit">
                                 <i className="fas fa-search" />
@@ -22,7 +22,7 @@ function Navbar() {
                         </div>
                     </div>
                 </form>
-                {/* </div> */}
+                {/*</div> */}
 
 
 
@@ -58,7 +58,7 @@ function Navbar() {
                         <span>
                             <i className="fas fa-shopping-cart text-white" />
                         </span>
-                        <span className="text-white text-capitalize font-weight-bold">
+                        <span className="d-sm-none d-lg-block text-white text-capitalize font-weight-bold">
                             cart
                     </span>
                     </div>
