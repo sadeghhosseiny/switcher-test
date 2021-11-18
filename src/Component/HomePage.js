@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './HomePage.css';
-import TimePickerWrapper from 'react-times';
-import TimePicker from 'react-times';
-import 'react-times/css/material/default.css';
-import 'react-times/css/classic/default.css';
 
 function HomePage() {
 
@@ -39,41 +35,44 @@ function HomePage() {
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
-      <div className="custom-control custom-switch">
-        <input
-          type="checkbox"
-          className="custom-control-input"
-          id="customSwitch1"
-          checked={checkedList.includes(GOOD)}
-          onChange={(e) => handleCheckboxChange(e.target.checked, GOOD)}
-        />
-        <label className="custom-control-label" for="customSwitch1">
-          Good
-        </label>
-      </div>
-      <div class="custom-control custom-switch">
-        <input
-          type="checkbox"
-          className="custom-control-input"
-          id="customSwitch2"
-          checked={checkedList.includes(FAST)}
-          onChange={(e) => handleCheckboxChange(e.target.checked, FAST)}
-        />
-        <label class="custom-control-label" for="customSwitch2">
-          Fast
-        </label>
-      </div>
-      <div class="custom-control custom-switch">
-        <input
-          type="checkbox"
-          className="custom-control-input"
-          id="customSwitch3"
-          checked={checkedList.includes(CHEAP)}
-          onChange={(e) => handleCheckboxChange(e.target.checked, CHEAP)}
-        />
-        <label class="custom-control-label" for="customSwitch3">
-          Cheap
-        </label>
+      <div>
+
+        <div className="custom-control custom-switch">
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="customSwitch1"
+            checked={checkedList.includes(GOOD)}
+            onChange={(e) => handleCheckboxChange(e.target.checked, GOOD)}
+          />
+          <label className="custom-control-label" for="customSwitch1">
+            Good
+          </label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="customSwitch2"
+            checked={checkedList.includes(FAST)}
+            onChange={(e) => handleCheckboxChange(e.target.checked, FAST)}
+          />
+          <label class="custom-control-label" for="customSwitch2">
+            Fast
+          </label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="customSwitch3"
+            checked={checkedList.includes(CHEAP)}
+            onChange={(e) => handleCheckboxChange(e.target.checked, CHEAP)}
+          />
+          <label class="custom-control-label" for="customSwitch3">
+            Cheap
+          </label>
+        </div>
       </div>
     </div>
   );
