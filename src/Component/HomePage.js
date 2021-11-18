@@ -12,10 +12,8 @@ function HomePage() {
   const CHEAP = "CHEAP";
 
   const [checkedList, setCheckedList] = useState([]);
-  // console.log("CH1111 ", checkedList.includes(GOOD));
   const handleCheckboxChange = (value, cbName) => {
     console.log(value, cbName);
-    // console.log('checked', checkedList);
     if (!value) {
       setCheckedList((prev) => prev.filter((item) => item !== cbName));
       return;
@@ -24,15 +22,11 @@ function HomePage() {
     let tempChecklist = [...checkedList];
     tempChecklist.push(cbName);
     tempChecklist.sort();
-    console.log('1111111111', tempChecklist);
     if (tempChecklist.length === 3) {
-      // console.log(tempChecklist);
       if (cbName == 'CHEAP') {
-        // console.log('1111111111');
         tempChecklist.splice(1, 1);
       }
       else if (cbName == 'FAST') {
-        // console.log('2222222222');
         tempChecklist.pop();
       }
       else if (cbName == 'GOOD') {
@@ -40,7 +34,6 @@ function HomePage() {
       }
     }
     setCheckedList(tempChecklist);
-    console.log('222222222', tempChecklist);
 
   };
 
