@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Switches from '../Component/switches/switches';
 
 function HomePage() {
-
   return (
     <Switches />
   );

@@ -13,13 +13,13 @@ function ToggleButton({ checkedList, setCheckedList, item }) {
     tempChecklist.push(cbName);
     tempChecklist.sort();
     if (tempChecklist.length === 3) {
-      if (cbName == 'CHEAP') {
+      if (cbName === 'CHEAP') {
         tempChecklist.splice(1, 1);
       }
-      else if (cbName == 'FAST') {
+      else if (cbName === 'FAST') {
         tempChecklist.pop();
       }
-      else if (cbName == 'GOOD') {
+      else if (cbName === 'GOOD') {
         tempChecklist.shift();
       }
     }
