@@ -1,0 +1,23 @@
+.good-lbl::before {
+  background-color: #278f36 !important;
+  /* border-color: #278f36; */
+}
+
+.cheap-lbl::before {
+  background-color: rgb(146, 47, 47) !important;
+  /* border-color: rgb(146, 47, 47); */
+}
+
+.false-lbl {
+  background-color: #fff !important;
+}
+
+.false-lbl::before {
+  background-color: red;
+  border: red;
+  color: green;
+}
+
+/* .custom-control-label::before {
+  background-color: #fff !important;
+} */
